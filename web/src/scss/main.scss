@@ -52,11 +52,6 @@
 }
 
 .aboutme-cards {
-  .card {
-gap: 2rem;
-align-items: center;
-max-width: 40rem;
-  }
   svg {
     fill: $primary-text;
     height: 10rem;
@@ -116,7 +111,7 @@ max-width: 40rem;
 .tab-content{
   display: none;
   &.active{
-    display: block;
+    display: grid;
   }
 }
 
@@ -134,4 +129,60 @@ max-width: 40rem;
 
 .tab-btn.active{
   border-bottom: 0.1rem solid $primary-text;
+}
+
+#projects-btn {
+  background-color: $secondary-text;
+  color: $primary-text;
+  border: 0.2rem solid $primary-text;
+  padding: 1.5rem 2rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  width: 20rem;
+  margin: auto;
+  font-weight: 700;
+  text-align: center;
+}
+
+.tab-grid {
+  grid-template-areas: 
+  "area1 area2 area3"
+  "area4 area5 area6";
+  gap: 2rem 2rem;
+  width: 100%;
+  img {
+    display: block;
+    width: 100%;
+
+  }
+  div {
+    width: 31.5rem;
+  }
+}
+.area1 {
+  grid-area: area1;
+}
+.area2 {
+  grid-area: area2;
+}
+.area3 {
+  grid-area: area3;
+}
+
+.area4 {
+  grid-area: area4;
+}
+
+.area5 {
+  grid-area: area5;
+}
+
+.area6 {
+  grid-area: area6;
+}
+
+.skills-section{
+  background-image: url("..//img/light_sky.jpg");
+  color: $secondary-text;
+  h2{}
 }

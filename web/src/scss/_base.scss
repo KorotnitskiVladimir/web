@@ -33,6 +33,15 @@ body {
   padding: 11rem 0;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  max-width: 40rem;
+    }
+
 .button-white{
   color: $primary-text;
   background-color: $secondary-text;
