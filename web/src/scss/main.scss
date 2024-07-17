@@ -1,0 +1,137 @@
+@use "../../node_modules/@crossfox/css-start/dist/base.min.css";
+@import "variables";
+@import "base";
+@import "header";
+
+/* banner section */
+.banner-section {
+  background: url('../img/light_sky.jpg') no-repeat center/cover;
+  width: 100%;
+  padding: 38rem 0 30rem;
+  position: relative;
+
+  h1 {
+    color: $secondary-text;
+    font-weight: 700;
+    font-size: $font-xl;
+    position: absolute;
+    top: -.05rem;
+    transform: rotate(-90deg);
+  }
+}
+
+.social{
+  svg{
+    height: 2rem;
+    width: 2rem;
+    fill: #fff;
+  }
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2.5rem;
+  gap: 1rem;
+}
+
+/* aboutme section */
+
+.aboutme-section{
+  color: $primary-text;
+  gap: 8rem;
+  p{
+    text-align: center;
+  }
+}
+
+.aboutme-container{
+  align-items: center;
+  gap: 2rem;
+  width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutme-cards {
+  .card {
+gap: 2rem;
+align-items: center;
+max-width: 40rem;
+  }
+  svg {
+    fill: $primary-text;
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+
+@media (max-width: $width-mob) {
+  html {
+    font-size: 2.9vw;
+  }
+}
+
+.contact-section{
+  color: $primary-text;
+  gap: 8rem;
+  p{
+    text-align: center;
+  }
+}
+
+.contact-form{
+  gap: 6rem;
+  input{
+    width: 100%;
+    border: 0;
+    border-bottom: .2rem solid $primary-color;
+    padding: 1.5rem;
+  }
+  input::placeholder{
+    color: $primary-text;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+  .fx-sb{
+    gap: 3rem;
+  }
+}
+
+#contact-btn {
+  background-color: $secondary-text;
+  color: $primary-text;
+  border: 0.2rem solid $primary-text;
+  padding: 1.5rem 2rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  width: 15rem;
+  margin: auto;
+  font-weight: 700;
+}
+
+.tabs-container {
+  gap: 8rem;
+}
+
+.tab-content{
+  display: none;
+  &.active{
+    display: block;
+  }
+}
+
+.tab-btn{
+  background-color: $secondary-text;
+  border: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.tabs{
+  width: 50rem;
+  margin: auto
+}
+
+.tab-btn.active{
+  border-bottom: 0.1rem solid $primary-text;
+}

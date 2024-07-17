@@ -1,0 +1,20 @@
+@import "variables";
+
+.header-menu{
+    gap: 3rem;
+    align-items: center;
+}
+
+.header{
+    padding: 4rem 0;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    color: $secondary-text;
+    font-weight: bolder;
+    .container {
+        align-items: center;
+    }
+}

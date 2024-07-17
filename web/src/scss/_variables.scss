@@ -1,0 +1,23 @@
+$primary-text: #0c0a0a;
+$secondary-text: #fff;
+$primary-color: #ccc;
+$secondary-color: #fcae1e;
+
+$font-s: 1.6rem;
+$font-m: 2rem;
+$font-l: 2.8rem;
+$font-xl: 5rem;
+
+
+$width-mob: 980px;
+
+@mixin isMobile {
+  @media (max-width: $width-mob) {
+    @content;
+  }
+}
+@mixin isDesktop {
+  @media (min-width: $width-mob) {
+    @content;
+  }
+}
