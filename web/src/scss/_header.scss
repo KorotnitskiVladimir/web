@@ -24,4 +24,7 @@
     padding: 2rem 0;
     color: $primary-text;
     box-shadow: 0rem .4rem .5rem 0rem rgba(0,0,0,0.13);
+    .button-white{
+        border: 0.2rem solid $primary-text; 
+    }
 }
