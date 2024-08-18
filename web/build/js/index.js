@@ -28,3 +28,21 @@ window.addEventListener("scroll", ()=>{
         header.classList.remove("header-white");
     }
 })
+
+//progress 
+
+document.addEventListener("DOMContentLoaded", function() {
+    const progressElements = document.querySelectorAll('.progress');
+    
+    progressElements.forEach(progress => {
+        const progressText = progress.querySelector('.progress-text');
+        const progressCircle = progress.querySelector('.progress-circle-prog');
+        
+        const percentage = parseInt(progressText.getAttribute('data-progress'));
+        const circleCircumference = 2 * Math.PI * 74; // 2 * π * radius
+        
+        const dashArrayValue = (percentage / 100) * circleCircumference;
+        
+        progressCircle.style.strokeDasharray = `${dashArrayValue} ${circleCircumference}`;
+    });
+});
