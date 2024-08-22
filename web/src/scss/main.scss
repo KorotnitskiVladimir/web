@@ -69,7 +69,7 @@
 .aboutme-container{
   align-items: center;
   gap: 2rem;
-  width: 65rem;
+  max-width: 65rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -86,6 +86,18 @@
 @media (max-width: $width-mob) {
   html {
     font-size: 2.9vw;
+  }
+  .aboutme-cards
+  {
+    flex-direction: column;
+    gap: 2rem;
+    svg{
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+  h2.info-section-text{
+    font-size: $font-l;
   }
 }
 
@@ -212,7 +224,7 @@
  
 }
 
-.skill-cards {
+.skill-cards, .footer-cards {
   text-align: center;
 
 }
@@ -276,4 +288,32 @@
   background-color: rgba(255, 255, 255, 0);
   -webkit-backdrop-filter: brightness(75%);
   backdrop-filter: brightness(75%);
+}
+
+.footer{
+  background-color: rgb(19, 19, 94);
+  color: $secondary-text;
+  h3{
+    font-size: $font-s;
+  }
+  .container{
+    max-width: 60rem;
+  }
+  .button-white{
+    max-width: 20rem;
+    margin: auto;
+    color: $secondary-text;
+    background-color: rgb(19, 19, 94);
+    border: 0.2rem solid $secondary-text;
+  }
+  .footer-cards{
+    svg{
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+}
+
+.footer-container{
+  gap: 6rem;
 }

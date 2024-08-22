@@ -1,3 +1,11 @@
+// menu burger
+const menuBurger = document.querySelector('.burger-icon');
+const header = document.querySelector(".header");
+
+menuBurger.addEventListener("click", () => {
+    header.classList.toggle("menu-active");
+})
+
 // tabs 
 const tabButtons = document.querySelectorAll(".tab-btn");
 const tabContents = document.querySelectorAll(".tab-content");
@@ -18,7 +26,6 @@ tabButtons.forEach(btn => {
 
 //header
 
-const header = document.querySelector(".header");
 window.addEventListener("scroll", ()=>{
     if (window.scrollY>50)
     {
