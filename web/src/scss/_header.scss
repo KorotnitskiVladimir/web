@@ -31,6 +31,7 @@
 
 /* responsive menu */
 .burger-icon {
+  display: none;
     width: 3rem;
     height: 2.2rem;
     span {
@@ -92,5 +93,8 @@
             transform: translateX(0%);
             color: $primary-text;
           }
+    }
+    .burger-icon{
+      display: flex;
     }
   }

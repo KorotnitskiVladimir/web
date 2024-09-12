@@ -30,30 +30,32 @@
     </div>
 </header>
 
-     <!-- <main>
+    <main>
     <section class="banner-section">
     <div class="bg-filter banner-section-container">
-        <div class="container">
-            <div class="banner-title">
-                <h1><span class="banner-title-name">Volodymyr</span> <span class="banner-title-surname">Korotnitski</span> <span class="banner-title-role">Creative Designer</span></h1>
+        <div class="banner-content">
+            <div class="container">
+                <div class="banner-title">
+                    <h1><span class="banner-title-name">Volodymyr</span> <span class="banner-title-surname">Korotnitski</span> <span class="banner-title-role">Creative Designer</span></h1>
+                </div>
+            </div>
+            <div class="social fx-col-sb">
+                <svg>
+                    <use xlink:href="#git-svg" />
+                </svg>
+                <svg>
+                    <use xlink:href="#git-svg" />
+                </svg>
+                <svg>
+                    <use xlink:href="#git-svg" />
+                </svg>
+                <svg>
+                    <use xlink:href="#git-svg" />
+                </svg>
             </div>
         </div>
-        <div class="social fx-col-sb">
-            <svg>
-                <use xlink:href="#git-svg" />
-            </svg>
-            <svg>
-                <use xlink:href="#git-svg" />
-            </svg>
-            <svg>
-                <use xlink:href="#git-svg" />
-            </svg>
-            <svg>
-                <use xlink:href="#git-svg" />
-            </svg>
-        </div>
     </div>
-</section> -->
+</section> 
       <section class="aboutme-section section container fx-col-sb">
     <div class="fx-col-sb aboutme-container">
         <h2>ABOUT ME</h2>
@@ -98,7 +100,110 @@
       </div>
 </div>
 </section>
-      
+  
+      <section class="skills-section">
+    <div class="bg-filter section">
+        <div class="container skills-section-container fx-col-sb">
+            <div class="container fx-col-sb aboutme-container">
+                <h2>MY SKILLS</h2>
+                <p>—</p>
+            </div>
+            <div class="skill-cards fx-sb">
+                <div class="card">
+                    <div class="progress" id="progress1">
+                        <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="progress-circle-prog" cx="80" cy="80" r="74"></circle>
+                        </svg>
+                        <div class="progress-text" data-progress="92">92%</div>
+                    </div>
+                    <h3>C++</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, minima!.</p>
+                </div>
+                <div class="card">
+                    <div class="progress" id="progress2">
+                        <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="progress-circle-prog" cx="80" cy="80" r="74"></circle>
+                        </svg>
+                        <div class="progress-text" data-progress="75">75%</div>
+                    </div>
+                    <h3>C#</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, dignissimos.</p>
+                </div>
+                <div class="card">
+                    <div class="progress" id="progress3">
+                        <svg class="progress-circle" width="20rem" height="20rem" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="progress-circle-prog" cx="80" cy="80" r="74"></circle>
+                        </svg>
+                        <div class="progress-text" data-progress="70">70%</div>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quisquam!</p>
+                </div>
+                <div class="card">
+                    <div class="progress" id="progress4">
+                        <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="progress-circle-prog" cx="80" cy="80" r="74"></circle>
+                        </svg>
+                        <div class="progress-text" data-progress="83">83%</div>
+                    </div>
+                    <h3>Unreal Engine 4</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, facilis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="contact-section section container fx-col-sb">
+    <div class="fx-col-sb aboutme-container">
+        <h2>CONTACT ME</h2>
+        <p>—</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis accusantium natus ad corrupti quibusdam minima mollitia veritatis, dolores quae sed.</p>
+    </div>
+    <form action="" class="contact-form fx-col-sb">
+        <div class="fx-sb credentials">
+            <input type="text" placeholder="Your name:">
+            <input type="text" placeholder="E-mail:">
+            <input type="text" placeholder="Phone number:">
+        </div>
+        <input type="text" placeholder="Your message:">
+        <input type="submit" value="SEND" id="contact-btn">
+    </form>
+</section>
+    </main>
+    <footer class="footer section">
+    <div class="footer-container container fx-col-sb">
+        <div class="container fx-col-sb aboutme-container">
+            <h2>GET IN TOUCH</h2>
+            <p>—</p>
+        </div>
+        <div class="footer-cards fx-sb">
+            <div class="card">
+                <svg>
+                    <use xlink:href="#telephone-svg" />
+                </svg>
+                <h3>Telephone</h3>
+                <a href="tel:+380675565924">+380675565924</a>
+            </div>
+            <div class="card">
+                <svg>
+                    <use xlink:href="#email-svg" />
+                </svg>
+                <h3>E-mail</h3>
+                <a href="mailto:korotnitskivladimir@gmail.com">korotnitskivladimir@gmail.com</a>
+            </div>
+            <div class="card">
+                <svg>
+                    <use xlink:href="#location-svg" />
+                </svg>
+                <h3>Adress</h3>
+                <a href="http://">Ukraine, 65014</a>
+            </div>
+        </div>
+        <button class="button-white"><a href=""></a>CONTACT ME</button>
+    </div>
+</footer>
+
+<!-- .card*3>div+p+p -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
   <symbol id="c-sharp-svg" viewBox="0 0 256 288">
     <path d="m255.569 84.452376c-.002-4.83-1.035-9.098-3.124-12.761-2.052-3.602-5.125-6.621-9.247-9.008-34.025-19.619-68.083-39.178-102.097-58.81699995-9.17-5.294-18.061-5.101-27.163.269-13.543 7.98699995-81.348 46.83399995-101.553 58.53699995-8.321 4.817-12.37 12.189-12.372 21.771-.013 39.455 0 78.909-.013 118.365 0 4.724.991 8.909 2.988 12.517 2.053 3.711 5.169 6.813 9.386 9.254 20.206 11.703 88.02 50.547 101.56 58.536 9.106 5.373 17.997 5.565 27.17.269 34.015-19.64 68.075-39.198 102.105-58.817 4.217-2.44 7.333-5.544 9.386-9.252 1.994-3.608 2.987-7.793 2.987-12.518 0 0 0-78.889-.013-118.345" />

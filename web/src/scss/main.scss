@@ -83,23 +83,7 @@
 }
 
 
-@media (max-width: $width-mob) {
-  html {
-    font-size: 2.9vw;
-  }
-  .aboutme-cards
-  {
-    flex-direction: column;
-    gap: 2rem;
-    svg{
-      width: 6rem;
-      height: 6rem;
-    }
-  }
-  h2.info-section-text{
-    font-size: $font-l;
-  }
-}
+
 
 .contact-section{
   color: $primary-text;
@@ -187,11 +171,11 @@
   width: 100%;
   img {
     display: block;
-    width: 100%;
+    width: 31.5rem;
 
   }
   div {
-    width: 31.5rem;
+   width: 100%;
   }
 }
 .area1 {
@@ -218,7 +202,7 @@
 
 /* skills */
 .skills-section{
-  background-image: url("..//img/light_sky.jpg");
+  background: url("..//img/light_sky.jpg") center/cover no-repeat;
   color: $secondary-text;
   h2{}
  
@@ -316,4 +300,85 @@
 
 .footer-container{
   gap: 6rem;
+}
+
+@media (max-width: $width-mob) {
+  html {
+    font-size: 2.9vw;
+  }
+  .aboutme-cards
+  {
+    flex-direction: column;
+    gap: 2rem;
+    svg{
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+  h2.info-section-text{
+    font-size: $font-l;
+  }
+  .tab-grid {
+    grid-template-areas: 
+    "area1 area2"
+    "area3 area4"
+    "area5 area6";
+    gap: 2rem 2rem;
+    width: 100%;
+    img {
+     width: 20rem;
+  }
+    // div {
+    //   width: 31.5rem;
+    // }
+  }
+  .tabs{ 
+    align-items: center;
+    flex-direction: column;
+  }
+  .skill-cards{
+    flex-direction: column;
+  }
+  .credentials{
+    flex-direction: column;
+  }
+  .footer-cards{
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .banner-section {
+
+    h1 {
+      font-size: $font-l;
+      transform: none;
+      text-align: left;
+    }
+  }
+  .banner-title-name{
+    font-size: $font-l;
+  }
+  
+  .banner-title-surname{
+    font-size: $font-l;
+  }
+  .banner-section-container{
+    padding: 20rem 0 25rem;
+  }
+  .social{
+    flex-direction: row;
+    position: static;
+    width: 10rem;
+    transform: none;
+  }
+  .banner-section-container{
+    position: static;
+  }
+  .banner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 73%;
+    margin: 0 auto;
+  }
 }
