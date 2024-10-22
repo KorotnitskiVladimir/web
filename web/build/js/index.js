@@ -53,3 +53,40 @@ document.addEventListener("DOMContentLoaded", function() {
         progressCircle.style.strokeDasharray = `${dashArrayValue} ${circleCircumference}`;
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    new Glide('.glide', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 3,
+        autoplay: 3000,
+        breakpoints: {990: {perView: 1}},
+      }).mount()
+      
+})
+
+document.addEventListener("DOMContentLoaded", () => {
+    const contactButton = document.querySelectorAll(".modal-open");
+contactButton.forEach(button => {
+    button.addEventListener("click", () => {
+        const modal = document.querySelector(".modal");
+        modal.classList.add("show")
+        document.body.classList.add("no-scroll");
+    })
+})})
+
+const closeButton = document.querySelector("#closeModal");
+closeButton.addEventListener("click", () => {
+    const modal = document.querySelector(".modal");
+    modal.classList.remove("show");
+    document.body.classList.remove("no-scroll");
+})
+
+window.addEventListener("click", (event) => {
+    const modal = document.querySelector(".modal");
+    if (event.target == modal)
+    {
+        modal.classList.remove("show");
+        document.body.classList.remove("no-scroll");
+    }
+})

@@ -13,6 +13,10 @@ body {
   background-color: $secondary-text;
 }
 
+h1::selection, p::selection, h2::selection, h3::selection, a::selection {
+  background-color: $secondary-color;
+}
+
 .fx-sb {
   display: flex;
   justify-content: space-between;
@@ -62,13 +66,4 @@ h3{
   text-align: center;
   font-size: $font-m;
   font-weight: 600;
-}
-
-.button-black{
-  background-color: $secondary-text;
-  color: $primary-text;
-  border: 0.2rem solid $primary-text;
-  padding: 1.5rem 2rem;
-  font-size: 1.4rem;
-  letter-spacing: 0.05em;
 }

@@ -9,19 +9,38 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+      integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
+      integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="page-top"></div>
     <header class="header">
     <div class="fx-sb container">
-        <a href="" class="logo">logo</a>
+        <a href="/" class="logo">
+            <!-- <img src="../../img/logo.jpg" alt=""> -->
+            <svg>
+                <use xlink:href="#logo"/>
+            </svg>
+        </a>
         <nav>
             <ul class="fx-sb header-menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">About me</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contacts</a></li>
-                <li class="button-white"><a href="">CONTACT ME</a></li>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#footer">Contacts</a></li>
+                <li><button class="button-white modal-open">CONTACT ME</button></li>
             </ul>
         </nav>
         <div class="burger-icon fx-col-sb">
@@ -31,37 +50,78 @@
 </header>
 
     <main>
-    <section class="banner-section">
-    <div class="bg-filter banner-section-container">
-        <div class="banner-content">
-            <div class="container">
-                <div class="banner-title">
-                    <h1><span class="banner-title-name">Volodymyr</span> <span class="banner-title-surname">Korotnitski</span> <span class="banner-title-role">Creative Designer</span></h1>
-                </div>
-            </div>
-            <div class="social fx-col-sb">
-                <svg>
-                    <use xlink:href="#git-svg" />
-                </svg>
-                <svg>
-                    <use xlink:href="#git-svg" />
-                </svg>
-                <svg>
-                    <use xlink:href="#git-svg" />
-                </svg>
-                <svg>
-                    <use xlink:href="#git-svg" />
-                </svg>
-            </div>
-        </div>
+      <section class="banner-section" id="banner">
+  <div class="bg-filter banner-section-container">
+    <div class="banner-content container">
+      <div class="banner-title">
+        <h1>
+          <span class="banner-title-name">Volodymyr</span>
+          <span class="banner-title-surname">Korotnitski</span>
+          <span class="banner-title-role">Creative Developer</span>
+        </h1>
+      </div>
+      <div class="social fx-col-sb">
+        <a href="https://github.com/KorotnitskiVladimir?tab=repositories" target="_blank">
+          <svg>
+            <use xlink:href="#git-svg" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/vladimir-korotnitski-738849108/" target="_blank">
+          <svg>
+            <use xlink:href="#linked-in" />
+          </svg>
+        </a>
+        <a href="https://discord.com/users/:korotnitskivladimir" target="_blank">
+          <svg>
+            <use xlink:href="#discord" />
+          </svg>
+        </a>
+        <a href="https://t.me/Vladimir_Korotnitski" target="_blank">
+          <svg>
+            <use xlink:href="#telegram" />
+          </svg>
+        </a>
+      </div>
     </div>
-</section> 
-      <section class="aboutme-section section container fx-col-sb">
+  </div>
+</section>
+
+      <section class="aboutme-section section container fx-col-sb" id="about">
     <div class="fx-col-sb aboutme-container">
         <h2>ABOUT ME</h2>
         <p>—</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis accusantium natus ad corrupti quibusdam minima mollitia veritatis, dolores quae sed.</p>
     </div>
+    <div class="fx-sb aboutme">
+        <div class="myphoto"></div>
+        <div class="aboutme-info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, fuga iste soluta odio possimus rerum sint molestiae amet assumenda iusto?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus libero, voluptatibus nam vitae praesentium sed ratione voluptatum deleniti eaque sapiente placeat, architecto officia iure excepturi nobis. Saepe, quas ipsa?</p>
+        </div>
+    </div>
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="../../img/QA.jpg" alt=""></li>
+            <li class="glide__slide"><img src="../../img/C++base.jpg" alt=""></li>
+            <li class="glide__slide"><img src="../../img/unreal.jpg" alt=""></li>
+            <li class="glide__slide"><img src="../../img/c++cisco.jpg" alt=""></li>
+            <li class="glide__slide"><img src="../../img/english-cisco.jpg" alt=""></li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&lt;</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&gt;</button>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+            <button class="glide__bullet" data-glide-dir="=4"></button>
+          </div>
+      </div>
+    <!-- </div>
     <div class="aboutme-cards fx-sb">
         <div class="card">
             <svg>
@@ -83,8 +143,8 @@
             </svg>
             <h3>Web development</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, consectetur.</p>
-        </div>
-    </div>
+        </div> -->
+    <!-- </div> -->
 </section>
       <section class="info-section ">
 <div class="bg-filter section">
@@ -100,7 +160,38 @@
       </div>
 </div>
 </section>
-  
+      <section class="portfolio-section container section" id="portfolio">
+    <div class="fx-col-sb aboutme-container">
+        <h2>PORTFOLIO</h2>
+        <p>—</p>
+     <div class="tabs-container fx-col-sb"> 
+            <div class="tabs container fx-sb">
+                <button class="tab-btn active" data-tab="tab1">All</button> 
+                <button class="tab-btn" data-tab="tab2">C++ projects</button>
+                <button class="tab-btn" data-tab="tab3">C# projects</button>
+                <button class="tab-btn" data-tab="tab4">Web projects</button>
+            </div>
+            <div class="tab-grid tab-content active" id="tab1">
+               <div class="area1"> <img src="../../img/project-pic1.jpg" alt=""></div>
+                <div class="area2"><img src="../../img/project-pic2.jpg" alt=""></div>
+              <div class="area3"> <img src="../../img/project-pic3.jpg" alt=""></div>
+                <div class="area4"><img src="../../img/project-pic4.jpg" alt=""></div>
+                <div class="area5"><img src="../../img/project-pic5.jpg" alt=""></div>
+               <div class="area6"> <img src="../../img/project-pic6.jpg" alt=""></div>
+            </div>
+            <div class="tab-content" id="tab2">
+                <p>Plus content</p>
+            </div>
+            <div class="tab-content" id="tab3">
+                <p>Sharp content</p>
+            </div>
+            <div class="tab-content" id="tab4">
+                <p>Web content</p>
+            </div>
+            <a href="" id="projects-btn">MORE PPROJECT</a>
+       </div>
+    </div>
+</section>
       <section class="skills-section">
     <div class="bg-filter section">
         <div class="container skills-section-container fx-col-sb">
@@ -111,7 +202,7 @@
             <div class="skill-cards fx-sb">
                 <div class="card">
                     <div class="progress" id="progress1">
-                        <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="progress-circle" xmlns="http://www.w3.org/2000/svg">
                             <circle class="progress-circle-prog" cx="80" cy="80" r="74"></circle>
                         </svg>
                         <div class="progress-text" data-progress="92">92%</div>
@@ -121,7 +212,7 @@
                 </div>
                 <div class="card">
                     <div class="progress" id="progress2">
-                        <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="progress-circle"  xmlns="http://www.w3.org/2000/svg">
                             <circle class="progress-circle-prog" cx="80" cy="80" r="74"></circle>
                         </svg>
                         <div class="progress-text" data-progress="75">75%</div>
@@ -131,7 +222,7 @@
                 </div>
                 <div class="card">
                     <div class="progress" id="progress3">
-                        <svg class="progress-circle" width="20rem" height="20rem" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="progress-circle"  xmlns="http://www.w3.org/2000/svg">
                             <circle class="progress-circle-prog" cx="80" cy="80" r="74"></circle>
                         </svg>
                         <div class="progress-text" data-progress="70">70%</div>
@@ -141,7 +232,7 @@
                 </div>
                 <div class="card">
                     <div class="progress" id="progress4">
-                        <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="progress-circle"  xmlns="http://www.w3.org/2000/svg">
                             <circle class="progress-circle-prog" cx="80" cy="80" r="74"></circle>
                         </svg>
                         <div class="progress-text" data-progress="83">83%</div>
@@ -153,7 +244,7 @@
         </div>
     </div>
 </section>
-    <section class="contact-section section container fx-col-sb">
+      <section class="contact-section section container fx-col-sb" id="contact">
     <div class="fx-col-sb aboutme-container">
         <h2>CONTACT ME</h2>
         <p>—</p>
@@ -166,11 +257,12 @@
             <input type="text" placeholder="Phone number:">
         </div>
         <input type="text" placeholder="Your message:">
-        <input type="submit" value="SEND" id="contact-btn">
+        <button type="submit" id="contact-btn">SUBMIT</button>
+        <!-- <input type="submit" value="SEND" id="contact-btn"> -->
     </form>
 </section>
     </main>
-    <footer class="footer section">
+    <footer class="footer section" id="footer">
     <div class="footer-container container fx-col-sb">
         <div class="container fx-col-sb aboutme-container">
             <h2>GET IN TOUCH</h2>
@@ -199,12 +291,11 @@
                 <a href="http://">Ukraine, 65014</a>
             </div>
         </div>
-        <button class="button-white"><a href=""></a>CONTACT ME</button>
+        <button class="button-white modal-open">CONTACT ME</button>
     </div>
 </footer>
 
-<!-- .card*3>div+p+p -->
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+<!-- .card*3>div+p+p --> <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
   <symbol id="c-sharp-svg" viewBox="0 0 256 288">
     <path d="m255.569 84.452376c-.002-4.83-1.035-9.098-3.124-12.761-2.052-3.602-5.125-6.621-9.247-9.008-34.025-19.619-68.083-39.178-102.097-58.81699995-9.17-5.294-18.061-5.101-27.163.269-13.543 7.98699995-81.348 46.83399995-101.553 58.53699995-8.321 4.817-12.37 12.189-12.372 21.771-.013 39.455 0 78.909-.013 118.365 0 4.724.991 8.909 2.988 12.517 2.053 3.711 5.169 6.813 9.386 9.254 20.206 11.703 88.02 50.547 101.56 58.536 9.106 5.373 17.997 5.565 27.17.269 34.015-19.64 68.075-39.198 102.105-58.817 4.217-2.44 7.333-5.544 9.386-9.252 1.994-3.608 2.987-7.793 2.987-12.518 0 0 0-78.889-.013-118.345" />
     <path d="m128.182 143.241376-125.194 72.084c2.053 3.711 5.169 6.813 9.386 9.254 20.206 11.703 88.02 50.547 101.56 58.536 9.106 5.373 17.997 5.565 27.17.269 34.015-19.64 68.075-39.198 102.105-58.817 4.217-2.44 7.333-5.544 9.386-9.252z" />
@@ -231,9 +322,47 @@
   <path fill="currentColor" d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608a17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42a18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
 </symbol>
 
+<symbol viewBox="0 0 20 20" id="linked-in">
+<rect x="0" fill="none" width="20" height="20"/>
+<g>
+<path d="M2.5 18h3V6.9h-3V18zM4 2c-1 0-1.8.8-1.8 1.8S3 5.6 4 5.6s1.8-.8 1.8-1.8S5 2 4 2zm6.6 6.6V6.9h-3V18h3v-5.7c0-3.2 4.1-3.4 4.1 0V18h3v-6.8c0-5.4-5.7-5.2-7.1-2.6z"/>
+</g>
+</symbol>
+
+<symbol viewBox="0 0 24 24" id="discord">
+    <g>
+        <path fill="none" d="M0 0h24v24H0z"/>
+        <path d="M13.914 14.58a8.998 8.998 0 0 1-.484.104 7.06 7.06 0 0 1-2.664-.01c-.154-.03-.372-.083-.653-.158l-.921 1.197c-2.273-.073-3.137-1.596-3.137-1.596 0-3.381 1.481-6.122 1.481-6.122 1.481-1.133 2.89-1.102 2.89-1.102l.403.525a1.12 1.12 0 0 1 .112-.01 8.527 8.527 0 0 1 2.314.01l.442-.525s1.41-.031 2.89 1.103c0 0 1.482 2.74 1.482 6.121 0 0-.875 1.522-3.148 1.596l-1.007-1.134zM10.076 11C9.475 11 9 11.45 9 12s.485 1 1.076 1c.6 0 1.075-.45 1.075-1 .01-.55-.474-1-1.075-1zm3.848 0c-.6 0-1.075.45-1.075 1s.485 1 1.075 1c.601 0 1.076-.45 1.076-1s-.475-1-1.076-1zM21 23l-4.99-5H19V4H5v14h11.003l.57 2H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v19z"/>
+    </g>
+</symbol>
+
+<symbol viewBox="0 0 50 50" id="telegram">
+  <path d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z"></path>
+</symbol>
+
+<symbol id="logo" viewBox="0 0 375 374.999991"><defs><g/><clipPath id="480f1efde2"><path d="M 6.105469 6.105469 L 369.105469 6.105469 L 369.105469 369.105469 L 6.105469 369.105469 Z M 6.105469 6.105469 " clip-rule="nonzero"/></clipPath></defs><g clip-path="url(#480f1efde2)"><path  d="M 187.605469 369.105469 C 87.554688 369.105469 6.105469 287.652344 6.105469 187.605469 C 6.105469 87.554688 87.554688 6.105469 187.605469 6.105469 C 287.652344 6.105469 369.105469 87.554688 369.105469 187.605469 C 369.105469 287.652344 287.652344 369.105469 187.605469 369.105469 Z M 187.605469 8.785156 C 88.988281 8.785156 8.785156 88.988281 8.785156 187.605469 C 8.785156 286.222656 88.988281 366.421875 187.605469 366.421875 C 286.222656 366.421875 366.421875 286.222656 366.421875 187.605469 C 366.421875 88.988281 286.222656 8.785156 187.605469 8.785156 Z M 187.605469 8.785156 " fill-opacity="1" fill-rule="nonzero"/></g><g  fill-opacity="1"><g transform="translate(100.571635, 243.749984)"><g><path d="M 73.71875 -104.03125 L 86.75 -104.03125 L 49.25 0 L 37.28125 0 L 0 -104.03125 L 12.8125 -104.03125 L 36.71875 -36.71875 C 39.46875 -28.988281 41.648438 -21.46875 43.265625 -14.15625 C 44.972656 -21.84375 47.203125 -29.503906 49.953125 -37.140625 Z M 73.71875 -104.03125 "/></g></g></g><g fill-opacity="1"><g transform="translate(184.976202, 243.749984)"><g><path d="M 89.453125 0 L 75.21875 0 L 37.28125 -50.453125 L 26.40625 -40.78125 L 26.40625 0 L 14.296875 0 L 14.296875 -104.03125 L 26.40625 -104.03125 L 26.40625 -52.4375 L 73.578125 -104.03125 L 87.875 -104.03125 L 46.046875 -58.84375 Z M 89.453125 0 "/></g></g></g></symbol>
+
 </svg>
 
+    <div class="modal">
+    <div class="modal-content">
+        <div class="close-container">
+            <span class="close" id="closeModal">&times;</span>
+        </div>
+        <h2>GET IN TOUCH</h2>
+        <form action="" class="contact-form fx-col-sb">
+            <div class="fx-sb credentials">
+                <input type="text" placeholder="Your name:">
+                <input type="text" placeholder="E-mail:">
+                <input type="text" placeholder="Phone number:">
+            </div>
+            <input type="text" placeholder="Your message:">
+            <input type="submit" value="SEND" id="contact-btn">
+        </form>
+    </div>
+</div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

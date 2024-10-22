@@ -5,7 +5,7 @@
 
 /* banner section */
 .banner-section {
-  background: url('../img/light_sky.jpg') no-repeat center/cover;
+  background: url("../img/light_sky.jpg") no-repeat center/cover;
 
   h1 {
     color: $secondary-text;
@@ -16,7 +16,7 @@
   }
 
   &::after {
-    content: url('../img/arrow.svg');
+    content: url("../img/arrow.svg");
     width: 20rem;
     height: 20rem;
     position: absolute;
@@ -26,25 +26,25 @@
   }
 }
 
-.banner-section-container{
+.banner-section-container {
   width: 100%;
   padding: 38rem 0 30rem;
   position: relative;
 }
 
-.banner-title-name{
+.banner-title-name {
   font-weight: 300;
 }
 
-.banner-title-surname{
+.banner-title-surname {
   font-weight: 800;
   font-size: $font-xxl;
   text-transform: uppercase;
   letter-spacing: 0.01rem;
 }
 
-.social{
-  svg{
+.social {
+  svg {
     height: 2rem;
     width: 2rem;
     fill: #fff;
@@ -58,15 +58,15 @@
 
 /* aboutme section */
 
-.aboutme-section{
+.aboutme-section {
   color: $primary-text;
   gap: 8rem;
-  p{
+  p {
     text-align: center;
   }
 }
 
-.aboutme-container{
+.aboutme-container {
   align-items: center;
   gap: 2rem;
   max-width: 65rem;
@@ -82,31 +82,28 @@
   }
 }
 
-
-
-
-.contact-section{
+.contact-section {
   color: $primary-text;
   gap: 8rem;
-  p{
+  p {
     text-align: center;
   }
 }
 
-.contact-form{
+.contact-form {
   gap: 6rem;
-  input{
+  input {
     width: 100%;
     border: 0;
-    border-bottom: .2rem solid $primary-color;
+    border-bottom: 0.2rem solid $primary-color;
     padding: 1.5rem;
   }
-  input::placeholder{
+  input::placeholder {
     color: $primary-text;
     font-weight: 700;
     letter-spacing: 0.03em;
   }
-  .fx-sb{
+  .fx-sb {
     gap: 3rem;
   }
 }
@@ -127,26 +124,25 @@
   gap: 8rem;
 }
 
-.tab-content{
+.tab-content {
   display: none;
-  &.active{
+  &.active {
     display: grid;
   }
 }
 
-.tab-btn{
+.tab-btn {
   background-color: $secondary-text;
   border: none;
   font-weight: 600;
   font-size: 1.5rem;
 }
 
-.tabs{
-  width: 50rem;
-  margin: auto
+.tabs {
+  margin: auto;
 }
 
-.tab-btn.active{
+.tab-btn.active {
   border-bottom: 0.1rem solid $primary-text;
 }
 
@@ -164,18 +160,16 @@
 }
 
 .tab-grid {
-  grid-template-areas: 
-  "area1 area2 area3"
-  "area4 area5 area6";
+  grid-template-areas:
+    "area1 area2 area3"
+    "area4 area5 area6";
   gap: 2rem 2rem;
   width: 100%;
   img {
     display: block;
-    width: 31.5rem;
-
   }
   div {
-   width: 100%;
+    width: 100%;
   }
 }
 .area1 {
@@ -201,18 +195,15 @@
 }
 
 /* skills */
-.skills-section{
+.skills-section {
   background: url("..//img/light_sky.jpg") center/cover no-repeat;
   color: $secondary-text;
-  h2{}
- 
 }
 
-.skill-cards, .footer-cards {
+.skill-cards,
+.footer-cards {
   text-align: center;
-
 }
-
 
 .progress {
   position: relative;
@@ -223,19 +214,21 @@
 
 .progress-circle {
   transform: rotate(-90deg);
+  width: 20rem;
+  height: 20rem;
 }
 
 .progress-circle-back {
-  fill: none; 
-  stroke: #D2D2D2;
+  fill: none;
+  stroke: #d2d2d2;
   stroke-width: 0.2rem;
 }
 
 .progress-circle-prog {
-  fill: none; 
+  fill: none;
   stroke: $secondary-text;
-  stroke-width: 0.2rem;  
-  stroke-dasharray: 0 999;    
+  stroke-width: 0.2rem;
+  stroke-dasharray: 0 999;
   stroke-dashoffset: 0;
   transition: stroke-dasharray 0.7s linear 0s;
 }
@@ -247,58 +240,59 @@
   text-align: center;
   font-size: 2em;
 }
- 
-.skills-section-container
-{
+
+.skills-section-container {
   gap: 8rem;
 }
 
-.info-section{
+.info-section {
   background: url("..//img/light_sky.jpg");
   color: $secondary-text;
-  p{text-align: center;}
+  p {
+    text-align: center;
+  }
 }
 
-.info-section-text{
+.info-section-text {
   font-size: $font-xl;
   letter-spacing: 0.1em;
 }
 
-.info-section-container{
+.info-section-container {
   gap: 4rem;
 }
 
-.bg-filter{
+.bg-filter {
   background-color: rgba(255, 255, 255, 0);
   -webkit-backdrop-filter: brightness(75%);
   backdrop-filter: brightness(75%);
 }
 
-.footer{
+.footer {
   background-color: rgb(19, 19, 94);
   color: $secondary-text;
-  h3{
+  h3 {
     font-size: $font-s;
   }
-  .container{
+  .container {
     max-width: 60rem;
   }
-  .button-white{
+  .button-white {
     max-width: 20rem;
     margin: auto;
     color: $secondary-text;
     background-color: rgb(19, 19, 94);
     border: 0.2rem solid $secondary-text;
   }
-  .footer-cards{
-    svg{
+  .footer-cards {
+    svg {
       height: 4rem;
       width: 4rem;
     }
   }
 }
 
-.footer-container{
+.footer-container {
   gap: 6rem;
 }
 
@@ -306,79 +300,164 @@
   html {
     font-size: 2.9vw;
   }
-  .aboutme-cards
-  {
+  .aboutme-cards {
     flex-direction: column;
     gap: 2rem;
-    svg{
+    svg {
       width: 6rem;
       height: 6rem;
     }
   }
-  h2.info-section-text{
+  h2.info-section-text {
     font-size: $font-l;
   }
   .tab-grid {
-    grid-template-areas: 
-    "area1 area2"
-    "area3 area4"
-    "area5 area6";
+    grid-template-areas:
+      "area1 area2"
+      "area3 area4"
+      "area5 area6";
     gap: 2rem 2rem;
     width: 100%;
-    img {
-     width: 20rem;
-  }
     // div {
     //   width: 31.5rem;
     // }
   }
-  .tabs{ 
+  .tabs {
     align-items: center;
     flex-direction: column;
   }
-  .skill-cards{
+  .skill-cards {
     flex-direction: column;
   }
-  .credentials{
+  .credentials {
     flex-direction: column;
   }
-  .footer-cards{
+  .footer-cards {
     flex-direction: column;
     gap: 4rem;
   }
   .banner-section {
-
     h1 {
       font-size: $font-l;
       transform: none;
       text-align: left;
     }
   }
-  .banner-title-name{
+  .banner-title-name {
     font-size: $font-l;
   }
-  
-  .banner-title-surname{
+
+  .banner-title-surname {
     font-size: $font-l;
   }
-  .banner-section-container{
-    padding: 20rem 0 25rem;
+  .banner-section-container {
+    padding: 24rem 0 25rem;
   }
-  .social{
+  .social {
     flex-direction: row;
     position: static;
     width: 10rem;
     transform: none;
   }
-  .banner-section-container{
+  .banner-section-container {
     position: static;
   }
-  .banner-content{
+  .banner-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 73%;
     margin: 0 auto;
+    gap: 3.5rem;
+  }
+  .aboutme{
+    flex-direction: column;
+    .myphoto{
+      width: 25rem;
+      height: 25rem;
+    }
+  }
+
+  .aboutme-info[class]{
+    p{
+      text-align: center;
+    }
   }
 }
+
+.aboutme{
+  img{
+    background-color: blue;
+    width: 30rem;
+    height: 30rem;
+  }
+  gap: 2rem;
+}
+
+
+.aboutme-info{
+  max-width: 70rem;
+  p{
+    text-align: left;
+  }
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.modal{
+  background-color: rgba(0, 0, 0, 0.295);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  backdrop-filter: blur(0.25rem);
+  transition: all 0.7s ease-out;
+  h2{
+    margin-bottom: 5rem;
+  }
+}
+
+.modal-content{
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 130rem;
+  max-height: 130rem;
+  padding: 5rem;
+  border-radius: 2rem;
+}
+
+.close{
+  font-size: $font-l;
+  cursor: pointer;
+}
+
+.close-container{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.modal.show{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.no-scroll{
+  overflow: hidden;
+}
+
+.myphoto{
+  background: url(../img/my_photo.jpg) no-repeat center/cover;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+}
+
+
